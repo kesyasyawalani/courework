@@ -1,0 +1,94 @@
+import javax.swing.*;
+
+public class JavaLibs5026211173 {
+    public static void main(String[] args){
+
+        String guess = (String) JOptionPane.showInputDialog(null,
+                "Coba tebak", "apa inii",
+                JOptionPane.QUESTION_MESSAGE, null, null,
+                "ketik di sini");
+
+        JOptionPane.showInputDialog(null,
+                "yakk betull! mau hadiah apa?", guess,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                null, "tidak menerima jawaban 'ayang'");
+
+        String[] choice = {"tf spey", "tf qiris", "tf gpey"};
+        JOptionPane.showInputDialog(null,
+                "harus pilih", "yang tadi cancel",
+                JOptionPane.QUESTION_MESSAGE, null, choice,
+                choice[0]);
+
+        String[] pilih = {"0+2", "4-2", "ini 2"};
+        JOptionPane.showInputDialog(null,
+                "pilih lagi", "pilih 2 untuk lanjut",
+                JOptionPane.QUESTION_MESSAGE, null, pilih,
+                pilih[2]);
+
+        String angka, nilai, kali;
+        angka = JOptionPane.showInputDialog(null,
+                "1-100", "ANGKA BULAT YA AGAK MAKSA INI");
+        int sum, x = 2;
+        int input = Integer.parseInt(angka);
+        sum = x+input;
+        JOptionPane.showMessageDialog(null,
+                sum+ " (ditambah 2 hihihi)");
+
+        nilai = JOptionPane.showInputDialog(null,
+                "1-100 (ini beda lagi)", "ANGKA BULAT YA AGAK MAKSA INI");
+        int iinput;
+        iinput = Integer.parseInt(nilai);
+        String[] tombol = {"cakep", "waww"};
+        String[] tekan = {"coba lagi", "try again"};
+        if (iinput > 79) {
+            JOptionPane.showOptionDialog(null,
+                    "Selamat! Anda dapat golden ticket", "CONGRATULATIONS",
+                    JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                    null, tombol, null);
+        } else { JOptionPane.showOptionDialog(null,
+                "Anda belum beruntung", "DON'T CRY DON'T BE SHY",
+                JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                null, tekan, null);}
+
+        double hasil, y = 5;
+        kali = JOptionPane.showInputDialog(null,
+                "1-100 (ini beda juga)", "yang skrg bebas dech");
+        double masuk = Double.parseDouble(kali);
+        hasil = y*masuk;
+        JOptionPane.showMessageDialog(null,
+                hasil+ " (dikali 5 hihihi)");
+
+        double hasill;
+        kali = JOptionPane.showInputDialog(null,
+                "mari belajar berhitung, 9 bagi 2=?", "hint: 4.5");
+        hasill = Double.parseDouble(kali);
+        if (hasill == 4.5) {
+            JOptionPane.showOptionDialog(null,
+                    "ettdah bener", "CONGRATULATIONS",
+                    JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                    null, tombol, null);
+        } else { JOptionPane.showOptionDialog(null,
+                "udah dikasih hint loch", "DON'T CRY DON'T BE SHY",
+                JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                null, tekan, null);}
+
+        String[] button = {"gass ngeng", "say no to no"};
+        JOptionPane.showOptionDialog(null,
+                "Lanjut gaksi?", "almost there bestie",
+                JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                null, button, null);
+
+        JOptionPane.showInputDialog(null, "mari berpesan kesan",
+                "ayo curhat", JOptionPane.QUESTION_MESSAGE, null,
+                null, "isi seperti 'saranghae'");
+
+        JOptionPane.showInputDialog(null, "ada AVENGERS di kalideres",
+                "TERAKHIR BANGET INI", JOptionPane.QUESTION_MESSAGE, null,
+                null, "lanjutin pantunnya");
+
+        JOptionPane.showMessageDialog(null,
+                "DADAHHH JANGAN BERTEMU LAGI", "byebyee",
+                JOptionPane.PLAIN_MESSAGE, null);
+    }
+}
